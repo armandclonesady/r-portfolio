@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { NavLink } from "react-router";
-import {routes} from "../routes";
 
 export function About() {
     return (
@@ -46,18 +45,18 @@ export function About() {
                 </Col>
             </Row>
         </Container>
-        <Container className="mt-5 bg-light p-5 rounded">
+        <Container>
             <Row>
-                <Col align="center">
-                    <NavLink to={routes.Formations}> <h3> Formations </h3> </NavLink>
+                <Col align="center" className="m-5 bg-light p-5 rounded-pill">
+                    <NavLink to="formations" className={"text-decoration-none"}> <h3> Formations </h3> </NavLink>
                 </Col>
 
-                <Col align="center">
-                <NavLink to={routes.Competences}> <h3> Compétences </h3> </NavLink>
+                <Col align="center" className="m-5 bg-light p-5 rounded-pill">
+                <NavLink to="competences" className={"text-decoration-none"}> <h3> Compétences </h3> </NavLink>
                 </Col>
 
-                <Col align="center">
-                <NavLink to={routes.Experiences}> <h3> Expériences </h3> </NavLink>
+                <Col align="center" className="m-5 bg-light p-5 rounded-pill">
+                <NavLink to="experiences" className={"text-decoration-none"}> <h3> Expériences </h3> </NavLink>
                 </Col>
             </Row>
         </Container>
