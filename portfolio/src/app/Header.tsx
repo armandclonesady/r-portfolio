@@ -1,7 +1,7 @@
 import { Container, Navbar } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
 import { NavLink } from "react-router"
-import routes from "../routes"
+import {routes} from "../routes"
 
 export function Header() {
 
@@ -21,13 +21,7 @@ export function Header() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        {fillRoutes()}
-
-                        {/* <Nav.Link as={NavLink} to={routes.about} > Formation</Nav.Link>
-                        <Nav.Link as={NavLink} to={routes.projects}> Compétence</Nav.Link>
-                        <Nav.Link as={NavLink} to={routes.contact}> Expériences</Nav.Link>
-                        <Nav.Link as={NavLink} to={routes.contact}> Projets</Nav.Link>
-                        <Nav.Link as={NavLink} to={routes.contact}> Contacts</Nav.Link> */}
+                        {fillRoutes()} 
                     </Nav>
                 </Navbar.Collapse>
             </Container>
