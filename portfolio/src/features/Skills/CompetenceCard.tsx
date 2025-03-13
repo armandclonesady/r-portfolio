@@ -22,7 +22,7 @@ export default function CompetenceCard({ competence }: CompetenceCardProps) {
                     <Row xs={1} md={2}>
                         {competence.frameworks.map((framework, index) => (
                             <Card bg="light" className="p-3  rounded pe-auto" key={index}>
-                                <Card.Img variant="top" src={framework.icon} height={"60dvh"}></Card.Img>
+                                {competence.icon && <Card.Img variant="top" src={framework.icon} height={"60dvh"}></Card.Img>}
                                 <Card.Title className="text-center">{framework.name}</Card.Title>
                             </Card>
                         ))}

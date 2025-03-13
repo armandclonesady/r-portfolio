@@ -1,4 +1,4 @@
-import { Skill } from "./types";
+import { Language, Skill } from "./types";
 
 
 export const frameWorks: { [key: string]: Skill } = {
@@ -86,3 +86,46 @@ export const skills: Skill[] = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
     }
 ];
+
+export const databases: Skill[] = [
+    {
+        name: `PostgreSQL`,
+        description: `Base de données SQL, appris durant mes études. C'est la base de données que j'utilise le plus, et avec laquelle je suis la plus à l'aise.`,
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+    },
+    {
+        name: `MongoDB`,
+        description: `Base de données NoSQL, appris durant mes études.`,
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+    },
+    {
+        name: `Redis`,
+        description: `Base de données NoSQL, appris durant mes études.`,
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
+    },
+    {
+        name: `Cassandra`,
+        description: `Base de données NoSQL, appris durant mes études.`,
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cassandra/cassandra-original.svg"
+    }
+]
+
+export const languages: Skill[] = [
+    {
+        name: `Français`,
+        description: `Langue maternelle`,
+        icon: "https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/fr.svg"
+    },
+    {
+        name: `Anglais`,
+        description: `Niveau C2 990/990 au TOEIC`,
+        icon: "https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/gb.svg"
+    },
+    {
+        name: `Allemand`,
+        description: `Niveau scolaire`,
+        icon: "https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/de.svg"
+    }
+
+
+]

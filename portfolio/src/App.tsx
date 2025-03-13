@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router';
 import { Navigator } from './app/Navigator';
 import { Header } from './app/Header';
 import React from 'react';
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const root = createRoot(document.querySelector('.root')!);
 
