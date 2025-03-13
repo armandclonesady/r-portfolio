@@ -1,13 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router';
+import { HashRouter } from 'react-router';
 import { Navigator } from './app/Navigator';
 import { Header } from './app/Header';
+import React from 'react';
 
 const root = createRoot(document.querySelector('.root')!);
 root.render(
-		<BrowserRouter>
+	<React.StrictMode>
+		<HashRouter>
       		<Header/>
 			<Navigator/>
-		</BrowserRouter>
+		</HashRouter>
+	</React.StrictMode>
 );
