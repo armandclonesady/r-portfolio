@@ -70,9 +70,8 @@ export function Contact() {
         </Container>
          <Container className="p-5 rounded">
             <Row>
-                <div className="embed-responsive embed-responsive-16by9">
-                <iframe src="public\res\Armand CV Stage Février 2025.pdf" className="embed-responsive-item" ></iframe>
-                </div>
+                {/* <iframe src="public/res/Armand CV Stage Février 2025.pdf" className="embed-responsive-item" ></iframe> */}
+                <img src="public/res/Armand CV Stage Février 2025.jpg" alt="CV" className="rounded w-50"/>
             </Row>
          </Container>
         </>

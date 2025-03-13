@@ -47,15 +47,15 @@ export function About() {
         </Container>
         <Container>
             <Row>
-                <Col align="center" className="m-5 bg-light p-5 rounded-pill">
+                <Col align="center" className="m-3 bg-light rounded">
                     <NavLink to="formations" className={"text-decoration-none"}> <h3> Formations </h3> </NavLink>
                 </Col>
 
-                <Col align="center" className="m-5 bg-light p-5 rounded-pill">
+                <Col align="center" className="m-3 bg-light rounded">
                 <NavLink to="competences" className={"text-decoration-none"}> <h3> Compétences </h3> </NavLink>
                 </Col>
 
-                <Col align="center" className="m-5 bg-light p-5 rounded-pill">
+                <Col align="center" className="m-3 bg-light rounded">
                 <NavLink to="experiences" className={"text-decoration-none"}> <h3> Expériences </h3> </NavLink>
                 </Col>
             </Row>

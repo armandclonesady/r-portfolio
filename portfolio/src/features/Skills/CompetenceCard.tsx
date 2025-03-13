@@ -34,7 +34,7 @@ export default function CompetenceCard({ competence }: CompetenceCardProps) {
 
     return (
         <>
-            <Card bg="light" className="p-3 m-2 rounded pe-auto" align="center" style={{cursor: "pointer"}}onClick={handleShow}>
+            <Card bg="light" className="p-3 m-2 rounded pe-auto text-center"  style={{cursor: "pointer"}}onClick={handleShow}>
                 <Card.Img variant="top" src={competence.icon} height={"60dvh"}></Card.Img> 
                 <Card.Title>{competence.name} {competence.frameworks && <Badge bg="primary" className="m-1">{competence.frameworks.length}</Badge>}</Card.Title>
             </Card>

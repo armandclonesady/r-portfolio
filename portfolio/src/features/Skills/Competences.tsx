@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import CompetencesList from "./CompetencesList";
 
 export default function Competences() {
@@ -13,8 +13,8 @@ export default function Competences() {
                         Voici une liste des compétences que j'ai acquises durant mes études et mes expériences professionnelles.
                     </p>
                 </Row>
+                <CompetencesList />
             </Container>
-            <CompetencesList />
         </>
     )
 }
