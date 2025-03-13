@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import "../../css/contact.css";
 
 export function Contact() {
     return (
@@ -6,7 +7,7 @@ export function Contact() {
         <Container className="mt-5 bg-light p-5 rounded">
             <Row>
                 <Col>
-                    <h1>Contact</h1>
+                    <h1>Contact:</h1>
                 </Col>
             </Row>
         </Container>
@@ -67,6 +68,13 @@ export function Contact() {
                 </Col>
             </Row>
         </Container>
+         <Container className="p-5 rounded">
+            <Row>
+                <div className="embed-responsive embed-responsive-16by9">
+                <iframe src="public\res\Armand CV Stage Février 2025.pdf" className="embed-responsive-item" ></iframe>
+                </div>
+            </Row>
+         </Container>
         </>
     )
 }

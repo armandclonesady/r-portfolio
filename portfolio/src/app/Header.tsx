@@ -14,7 +14,7 @@ export function Header() {
     }
 
     return (
-        <Navbar expand="md" bg="dark" variant="dark">
+        <Navbar expand="md" bg="dark" variant="dark" fixed="top">
             <Container>
                 {/* <Nav.Link as={NavLink} to={routes.home} className="navbar-brand">Home</Nav.Link> */}
                 <Navbar.Brand as={NavLink} to={routes.Home}>Armand SADY</Navbar.Brand>
