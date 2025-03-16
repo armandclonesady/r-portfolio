@@ -14,7 +14,7 @@ export function About() {
             <Row>
                 <Col>
                     <p>
-                        Je m'appelle Armand Sady, je suis actuellement en <strong>3eme année de BUT Informatique a l'Université de Lille</strong>
+                        Je m'appelle Armand Sady, je suis actuellement en <strong>3ème année de BUT Informatique a l'Université de Lille</strong>
                     </p>
                 </Col>
             </Row>
@@ -33,7 +33,6 @@ export function About() {
                     <p>
                         J'ai eu l'occasion de réalisé beaucoup de projet au cours de ma formation, et j'ai acquis aussi des compétences en informatiques qui sont visible sur ce portfolio.
                         Vous pouvez scroll afin de changer de page et voir mes compétences, mes expériences, mes formations, mes projets et mes contacts.
-                        Vous pouvez voir une version clonée depuis mon gitlab universitaire de mes projets sur mon gitlab!
                     </p>
                 </Col>
             </Row>

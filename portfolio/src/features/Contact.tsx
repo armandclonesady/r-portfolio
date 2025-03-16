@@ -7,7 +7,7 @@ export function Contact() {
         <Container className="mt-5 bg-light p-5 rounded">
             <Row>
                 <Col>
-                    <h1>Contact:</h1>
+                    <h1>Contact</h1>
                 </Col>
             </Row>
         </Container>

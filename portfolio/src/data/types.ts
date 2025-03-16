@@ -10,14 +10,16 @@ export type Experience = {
     description: string,
     company: string,
     startDate: string,
-    endDate: string
+    endDate: string,
+    technologies: Skill[]
 }
 
 export type Project = {
     name: string,
     logo: string,
     description: string,
-    date: string,
+    startDate: Date,
+    endDate: Date,
     link: string,
     technologies: Skill[]
 }

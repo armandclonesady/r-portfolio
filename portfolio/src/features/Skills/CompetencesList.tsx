@@ -1,5 +1,5 @@
 import { Accordion, Row } from "react-bootstrap";
-import { frameWorks, skills, languages, databases } from "../../data/data";
+import { frameWorks, skills, languages, databases } from "../../data/skills";
 import CompetenceCard from "./CompetenceCard";
 
 export default function CompetencesList() {
@@ -7,16 +7,16 @@ export default function CompetencesList() {
         <>
             <Accordion defaultActiveKey={['0']} alwaysOpen>
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header>Langages</Accordion.Header>
+                    <Accordion.Header>Langages de programmation</Accordion.Header>
                     <Accordion.Body>
                         <h2>Langages</h2>
                         <p>
                             Appuyez sur un langage pour plus d'informations, et les framework connus!
                         </p>
                         <Row xs={1} md={5} className="g-4">
-                            {skills.map((skill, index) => (
-                                <CompetenceCard key={index} competence={skill} />
-                            ))}
+                                {Object.keys(skills).map((skill, index) => (
+                                 <CompetenceCard key={index} competence={skills[skill]} />
+                                 ))}
                         </Row>
                     </Accordion.Body>
                 </Accordion.Item>
@@ -44,9 +44,9 @@ export default function CompetencesList() {
                         <p></p>
                         </Row>
                          <Row xs={1} md={5} className="g-4">
-                         {databases.map((skill, index) => (
-                                <CompetenceCard key={index} competence={skill} />
-                            ))}
+                            {Object.keys(databases).map((db, index) => (
+                                 <CompetenceCard key={index} competence={databases[db]} />
+                                 ))}
                         </Row>
                     </Accordion.Body>
                 </Accordion.Item>
@@ -60,9 +60,9 @@ export default function CompetencesList() {
                         </p>
                         </Row>
                          <Row xs={1} md={5} className="g-4">
-                         {languages.map((skill, index) => (
-                                <CompetenceCard key={index} competence={skill} />
-                            ))}
+                            {Object.keys(languages).map((language, index) => (
+                                 <CompetenceCard key={index} competence={languages[language]} />
+                                 ))}
                         </Row>
                     </Accordion.Body>
                 </Accordion.Item>
