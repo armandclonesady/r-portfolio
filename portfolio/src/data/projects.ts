@@ -1,7 +1,7 @@
 import { Project } from "./types";
 import {skills, frameWorks, databases } from "./skills";
 
-export const projects: { [key: string]: Project } = {
+export const projects = {
     Calendar: {
         name: `Calendrier de gestion de rendez-vous`,
         logo: ``,
@@ -27,7 +27,7 @@ export const projects: { [key: string]: Project } = {
         startDate: new Date(`2024-2`),
         endDate: new Date(`2024-4`),
         link: "https://github.com/armandclonesady/jsae",
-        technologies: [skills.JS, frameWorks.NodeJS, frameWorks.HTML_CSS],
+        technologies: [skills.JS, frameWorks.NodeJS, skills.HTML_CSS],
     },
     API_Pizza: {
         name: `API Pizza`,
@@ -74,4 +74,4 @@ export const projects: { [key: string]: Project } = {
         link: "https://github.com/armandclonesady/As-Du-Crous",
         technologies: [skills.Java]
     }
-}
+} satisfies { [key: string]: Project };

@@ -1,7 +1,7 @@
 import { Skill } from "./types";
 
 
-export const frameWorks: { [key: string]: Skill } = {
+export const frameWorks = {
     React: {
         name: `React`,
         description: `Bibliothèque JS/TS utilisé afin de construire des interfaces utilisateur et des applications web monopages, appris durant mes études et que j'apprécie énormément utiliser.`,
@@ -47,9 +47,9 @@ export const frameWorks: { [key: string]: Skill } = {
         description: `Framework Java, appris durant mes études, principalement en première année.`,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
     }
-};
+} satisfies { [key: string]: Skill } ;
 
-export const skills: { [key: string]: Skill }  = {
+export const skills = {
     Java: {
         name: `Java`,
         description: `Langage de programmation orienté objet, étudié durant mes cours universitaires, langage avec lequel j'ai le plus d'expérience.`,
@@ -90,9 +90,9 @@ export const skills: { [key: string]: Skill }  = {
         frameworks: [frameWorks.React, frameWorks.VueJS, frameWorks.NestJS],
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
     }
-};
+} satisfies { [key: string]: Skill };
 
-export const databases:  { [key: string]: Skill }  = {
+export const databases = {
     Postgres: {
         name: `PostgreSQL`,
         description: `Base de données SQL, appris durant mes études. C'est la base de données que j'utilise le plus, et avec laquelle je suis la plus à l'aise.`,
@@ -113,9 +113,9 @@ export const databases:  { [key: string]: Skill }  = {
         description: `Base de données NoSQL, appris durant mes études.`,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cassandra/cassandra-original.svg"
     }
-}
+} satisfies { [key: string]: Skill }
 
-export const languages:  { [key: string]: Skill } = {
+export const languages = {
     french: {
         name: `Français`,
         description: `Langue maternelle`,
@@ -131,4 +131,4 @@ export const languages:  { [key: string]: Skill } = {
         description: `Niveau scolaire`,
         icon: "https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/de.svg"
     }
-}
+} satisfies { [key: string]: Skill }
