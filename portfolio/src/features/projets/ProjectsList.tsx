@@ -32,6 +32,13 @@ export default function ProjectsList() {
                 </Col>
             )
         }
+        if (project.startDate.getTime() === project.endDate.getTime()) {
+            return (
+                <Col className="bg-info rounded m-3 p-3 text-center">
+                    <p>Date - {formatDate(project.startDate)}</p>
+                </Col>
+            )
+        }
         return (
             <Col className="bg-info rounded m-3 p-3 text-center">
                 <p>Début - {formatDate(project.startDate)}</p>

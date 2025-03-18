@@ -9,8 +9,8 @@ export type Experience = {
     title: string,
     description: string,
     company: string,
-    startDate: string,
-    endDate: string,
+    startDate: Date,
+    endDate: Date,
     technologies: Skill[]
 }
 

@@ -73,5 +73,14 @@ export const projects = {
         endDate: new Date(`2023-09`),
         link: "https://github.com/armandclonesady/As-Du-Crous",
         technologies: [skills.Java]
+    },
+    Portfolio: {
+        name: `Portfolio`,
+        logo: ``,
+        description: `Ce portfolio a été développé en React, en utilisant TypeScript pour le front-end. Ce projet m'a permit de mettre en pratique mes connaissances en React et TypeScript, et m'a permit de rendre mon portfolio bien plus beau et plus facile a mettre a jour!`,
+        startDate: new Date(`2025-03-01`),
+        endDate: new Date(`2025-04-01`),
+        link: "https://armandclonesady.github.io/r-portfolio/#/r-portfolio/",
+        technologies: [skills.TS, frameWorks.React, frameWorks.Bootstrap]
     }
 } satisfies { [key: string]: Project };
