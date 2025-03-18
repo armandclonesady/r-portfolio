@@ -1,8 +1,7 @@
 import { Badge, Button, Modal } from "react-bootstrap";
 import { Experience } from "../../data/types";
 import { useState } from "react";
-import { formatDate, formatDates } from "../functions";
-import { skills } from "../../data/skills";
+import { formatDates } from "../functions";
 import CompetenceCard from "../Skills/CompetenceCard";
 
 interface ExperienceCardProps {
