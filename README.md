@@ -1,3 +1,7 @@
+# Note for future clone:
+
+If you want to deploy your changes you gotta commit and then do npm run deploy, that does the CICD shit that deploys the thing
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
