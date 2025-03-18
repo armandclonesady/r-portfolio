@@ -2,7 +2,6 @@ import { Accordion, Container, Col, Row } from "react-bootstrap";
 import { projects } from "../../data/projects";
 import { Project } from "../../data/types";
 import CompetenceCard from "../skills/CompetenceCard";
-import { Projects } from "./Projects";
 
 export default function ProjectsList() {
 
@@ -51,7 +50,7 @@ export default function ProjectsList() {
 
     return (
         <>
-        <Accordion alwaysOpen>
+        <Accordion alwaysOpen defaultActiveKey={['1']}>
             {
                 projectList.map((project, index) => (
                     <Accordion.Item key={index} eventKey={index.toString()}>

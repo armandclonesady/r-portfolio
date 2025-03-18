@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "../../css/contact.css";
+import CV from "../assets/Armand CV Stage Février 2025.jpg";
 
 export function Contact() {
     return (
@@ -71,7 +72,7 @@ export function Contact() {
          <Container className="p-5 rounded">
             <Row>
                 {/* <iframe src="public/res/Armand CV Stage Février 2025.pdf" className="embed-responsive-item" ></iframe> */}
-                <img src="public/res/Armand CV Stage Février 2025.jpg" alt="CV" className="rounded w-50"/>
+                <img src={CV} alt="CV" className="rounded w-50"/>
             </Row>
          </Container>
         </>
