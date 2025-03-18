@@ -8,18 +8,23 @@ import {
 	TimelineSeparator,
 } from "@mui/lab";
 
-import { experiences } from "../../data/experiences";
 import { Experience } from "../../data/types";
 import { formatDate, sortExperiences } from "../functions";
 import ExperienceCard from "./ExperienceCard";
 
-export default function () {
-	const experienceList = Object.values(experiences) as Experience[];
+interface ExperienceTimelineProps {
+	experiences: Experience[];
+}
 
-	const sortedExperiences: Experience[] = sortExperiences(experienceList);
+export default function ({ experiences }: ExperienceTimelineProps) {
+	const sortedExperiences: Experience[] = sortExperiences(experiences);
+
+	const orientation = () => {
+		return Math.random() > 0.5 ? "alternate" : "alternate-reverse";
+	};
 
 	return (
-		<Timeline position="alternate">
+		<Timeline position={orientation()}>
 			{sortedExperiences.map((experience, index) => (
 				<TimelineItem key={index}>
 					<TimelineOppositeContent

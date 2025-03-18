@@ -1,9 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
-import FormationTimeline from "./FormationTimeline";
+import ExperienceTimeline from "../experiences/ExperienceTimeline";
+import { Experience } from "../../data/types";
+import { formations } from "../../data/formations";
 
 export default function Formations() {
+	const formationList = Object.values(formations) as Experience[];
 	return (
-		<Container className="mt-5 bg-light p-5 rounded">
+		<Container className="mt-3 bg-light p-5 rounded">
 			<Row>
 				<Col>
 					<h1>Formations</h1>
@@ -14,7 +17,7 @@ export default function Formations() {
 				</Col>
 			</Row>
 			<Row>
-				<FormationTimeline />
+				<ExperienceTimeline experiences={formationList} />
 			</Row>
 		</Container>
 	);

@@ -1,8 +1,15 @@
 import { Col, Container, Row } from "react-bootstrap";
+import React from "react";
 import "../../css/contact.css";
 import CV from "../assets/Armand CV Stage Février 2025.jpg";
+import CV_PDF from "../assets/Armand CV Stage Février 2025.pdf";
 
 export function Contact() {
+	function handleCVClick(e: React.MouseEvent<HTMLImageElement>) {
+		e.preventDefault();
+		window.open(CV_PDF, "_blank");
+	}
+
 	return (
 		<>
 			<Container className="mt-5 bg-light p-5 rounded">
@@ -79,7 +86,7 @@ export function Contact() {
 							LinkedIn
 						</h2>
 						<br />
-						<Col clas>
+						<Col>
 							<p>
 								<a
 									href="https://www.linkedin.com/in/armand-sady-368992274//"
@@ -92,10 +99,17 @@ export function Contact() {
 					</Col>
 				</Row>
 			</Container>
-			<Container className="p-5 rounded">
+			<Container className="p-5 rounded text-center">
 				<Row>
-					{/* <iframe src="public/res/Armand CV Stage Février 2025.pdf" className="embed-responsive-item" ></iframe> */}
-					<img src={CV} alt="CV" className="rounded w-50" />
+					<Col>
+						{" "}
+						<img
+							src={CV}
+							alt="CV"
+							style={{ width: "33dvw" }}
+							onClick={handleCVClick}
+						/>{" "}
+					</Col>
 				</Row>
 			</Container>
 		</>

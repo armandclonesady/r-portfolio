@@ -2,7 +2,7 @@ import { Accordion, Container, Col, Row } from "react-bootstrap";
 import { projects } from "../../data/projects";
 import { Project } from "../../data/types";
 import CompetenceCard from "../Skills/CompetenceCard";
-import { formatDate } from "../functions";
+import { formatDate, formatDates } from "../functions";
 
 export default function ProjectsList() {
 	const projectList = Object.values(projects) as Project[];
@@ -24,8 +24,7 @@ export default function ProjectsList() {
 		}
 		return (
 			<Col className="bg-info rounded m-3 p-3 text-center">
-				<p>Début - {formatDate(project.startDate)}</p>
-				<p>Fin - {formatDate(project.endDate)}</p>
+				<p> {formatDates(project.startDate, project.endDate)}</p>
 			</Col>
 		);
 	}
@@ -55,7 +54,7 @@ export default function ProjectsList() {
 								<Row>
 									<h2>{project.name}</h2>
 								</Row>
-								<Row className="m-3">
+								<Row>
 									<p>{project.description}</p>
 								</Row>
 								<Row>
@@ -64,12 +63,11 @@ export default function ProjectsList() {
 								<Row>
 									<h4> Compétences utilisées </h4>
 								</Row>
-								<Row xs={3}>
+								<Row>
 									{project.technologies.map(
 										(skill, index) => (
-											<Col>
+											<Col key={index}>
 												<CompetenceCard
-													key={index}
 													competence={skill}
 												/>
 											</Col>

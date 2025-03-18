@@ -9,7 +9,7 @@ export function capitalize(str: string): string {
 
 export function formatDate(date: Date) {
 	if (date.getTime() > Date.now()) {
-		return "En cours";
+		return "À venir";
 	}
 	return capitalize(
 		date.toLocaleDateString("fr-FR", {

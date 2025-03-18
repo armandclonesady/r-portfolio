@@ -1,7 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ExperienceTimeline from "./ExperienceTimeline";
+import { experiences } from "../../data/experiences";
+import { Experience } from "../../data/types";
 
 export default function Experiences() {
+	const experienceList = Object.values(experiences) as Experience[];
 	return (
 		<Container className="mt-5 bg-light p-5 rounded">
 			<Row>
@@ -15,7 +18,7 @@ export default function Experiences() {
 				</Col>
 			</Row>
 			<Row>
-				<ExperienceTimeline />
+				<ExperienceTimeline experiences={experienceList} />
 			</Row>
 		</Container>
 	);
