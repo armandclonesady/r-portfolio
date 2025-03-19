@@ -1,4 +1,4 @@
-import { Badge, Button, Modal } from "react-bootstrap";
+import { Badge, Button, Col, Modal, Row, Image } from "react-bootstrap";
 import { Experience } from "../../data/types";
 import { useState } from "react";
 import { formatDates } from "../functions";
@@ -29,6 +29,45 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
 		}
 	}
 
+	function ExperienceImage() {
+		if (experience.icon) {
+			return (	
+				<Image style={{maxHeight: "10dvh"}} src={experience.icon} alt={experience.title} rounded fluid/>
+			);
+		} else {
+			return <></>;
+		}
+	}
+
+	function TitleCard() {
+		if (experience.icon) {
+			return (
+			<Row>
+						<Col md={8}>
+							<Badge bg="secondary">
+								{formatDates(experience.startDate, experience.endDate)}
+							</Badge>
+							<h3>Entreprise - {experience.company}</h3>
+						</Col>
+						<Col>
+							<ExperienceImage/>
+						</Col>
+					</Row>	
+				)
+		} else {
+			return (
+				<Row>
+						<Col>
+							<Badge bg="secondary">
+								{formatDates(experience.startDate, experience.endDate)}
+							</Badge>
+							<h3>Entreprise - {experience.company}</h3>
+						</Col>
+					</Row>
+			)
+		}
+	}
+
 	return (
 		<>
 			<Button
@@ -44,10 +83,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
 					<Modal.Title>{experience.title}</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<h3>Entreprise - {experience.company}</h3>
-					<Badge bg="secondary">
-						{formatDates(experience.startDate, experience.endDate)}
-					</Badge>
+					<TitleCard/>
 					<h4>Description </h4>
 					<p>{experience.description}</p>
 					<Frameworks />

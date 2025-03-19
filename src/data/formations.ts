@@ -1,4 +1,6 @@
 import { Experience } from "./types";
+import queneau from "../assets/formations/queneau.png";
+import iut from "../assets/formations/univ-lille.png";
 
 export const formations = {
 	BAC: {
@@ -8,6 +10,7 @@ export const formations = {
 		startDate: new Date(`2020-09`),
 		endDate: new Date(`2022-07`),
 		technologies: [],
+		icon: queneau
 	},
 	BUT: {
 		title: "BUT Informatique",
@@ -16,5 +19,6 @@ export const formations = {
 		startDate: new Date(`2022-09`),
 		endDate: new Date(`2025-08`),
 		technologies: [],
+		icon: iut
 	},
 } satisfies { [key: string]: Experience };

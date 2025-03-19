@@ -7,6 +7,7 @@ export type Skill = {
 
 export type Experience = {
 	title: string;
+	icon: string | null;
 	description: string;
 	company: string;
 	startDate: Date;
