@@ -16,7 +16,7 @@ export function About() {
 						<p>
 							Je m'appelle Armand Sady, je suis actuellement en{" "}
 							<strong>
-								3ème année de BUT Informatique a l'Université de
+								3ème année de Licence Informatique a l'Université de
 								Lille
 							</strong>
 						</p>
@@ -34,14 +34,14 @@ export function About() {
 							<strong>Réalisation d'Application</strong>, ma
 							formation est accès sur le développement pur, en
 							utilisant principalement le Java, tout en nous
-							apprennant différents autres languages. Je suis
-							actuellement{" "}
+							apprennant différents autres languages. J'ai continué
+							ma formation en License pour une année, dans le but de
+							continuer ma formation afin <strong>d'obtenir 
+							un Master</strong>.Je suis actuellement{" "}
 							<strong>
-								à la recherche d'un stage pour de 10 semaines
-								minimum pour Mars 2025
+								à la recherche d'un stage pour de 12 semaines
+								minimum pour Avril 2026
 							</strong>
-							. J'aimerais continuer ma formation après le BUT
-							afin <strong>d'obtenir un Master</strong>.
 						</p>
 					</Col>
 				</Row>
