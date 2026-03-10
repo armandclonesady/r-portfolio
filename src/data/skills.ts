@@ -1,5 +1,7 @@
 import { Skill } from "./types";
 
+import rocq from "../assets/skills/icon-rocq-black.svg";
+
 export const frameWorks = {
 	React: {
 		name: `React`,
@@ -102,7 +104,7 @@ export const skills = {
 	Rocq: {
 		name: `Rocq`,
 		description: `Assistant de preuve utilisant le langage Gallina. Appris dans le cadre de ma licence.`,
-		icon: "https://github.com/rocq-prover/rocq-prover.org/blob/main/rocq-id/logos/SVG/icon-rocq-black.svg",
+		icon: rocq,
 	}
 	
 } satisfies { [key: string]: Skill };
