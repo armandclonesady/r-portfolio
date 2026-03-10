@@ -21,4 +21,13 @@ export const formations = {
 		technologies: [],
 		icon: iut
 	},
+	Licence: {
+		title: "License Informatique",
+		description: "L3 Informatique",
+		company: "Université de Lille",
+		startDate: new Date(`2025-09`),
+		endDate: new Date(`2026-08`),
+		technologies: [],
+		icon: iut
+	},
 } satisfies { [key: string]: Experience };
