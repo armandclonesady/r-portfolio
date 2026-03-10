@@ -94,6 +94,17 @@ export const skills = {
 		frameworks: [frameWorks.React, frameWorks.VueJS, frameWorks.NestJS],
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
 	},
+	Haskell: {
+		name: `Haskell`,
+		description: `Langage de programmation fonctionnel fondé sur le lambda calcul et la logique combinatoire. Appris dans le cadre de ma licence.`,
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/haskell/haskell-plain.svg",
+	},
+	Rocq: {
+		name: `Rocq`,
+		description: `Assistant de preuve utilisant le langage Gallina. Appris dans le cadre de ma licence.`,
+		icon: "https://github.com/rocq-prover/rocq-prover.org/blob/main/rocq-id/logos/SVG/icon-rocq-black.svg",
+	}
+	
 } satisfies { [key: string]: Skill };
 
 export const databases = {
