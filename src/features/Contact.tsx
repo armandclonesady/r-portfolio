@@ -1,8 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import React from "react";
 import "../../css/contact.css";
-import CV from "../assets/Armand CV Stage Février 2025.jpg";
-import CV_PDF from "../assets/Armand CV Stage Février 2025.pdf";
+import CV from "../assets/CV.jpg";
+import CV_PDF from "../assets/CV.pdf";
 
 export function Contact() {
 	function handleCVClick(e: React.MouseEvent<HTMLImageElement>) {
